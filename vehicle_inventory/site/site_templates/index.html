@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+
+    <!--Start of Header Section-->
+
+    <header class="row">
+        <div class="col-12 col-md-6" id="header-text">
+            <h2>Choose your next car from the comfort of your home!</h2>
+            <h5>Start with 0$ down and 0% APR</h5>
+            <p id="exclusion">Exclusions may apply</p>
+            <h6>Let's find your dream car together!</h6>
+            <div>
+                <button class="btn btn-primary">View Our Inventory</button>
+                <button class="btn btn-primary">Follow us</button>
+            </div>
+        </div>
+        <!--Header Image-->
+        <div class="col-12 col-md-6">
+            <img src="../../static/images/car-lot.jpg" alt="Hero Image" class="hero-image">
+        </div>
+    </header>
+
+        <!--Start of Middle Section-->
+        <section class="row">
+            <div class="col-12" id="middle-text">
+                <h2>Browse our wide selection of vehicles!</h2>
+                <p>Fast, environmentally-friendly, efficient, we have the car for every preference!</p>
+            </div>
+        </section>
+</div>    
+{% endblock content %}
