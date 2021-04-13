@@ -1,11 +1,15 @@
+*{
+    font-family:sans-serif;
+}
+
 .car-nav{
     display: flex;
     justify-content: space-between;
 }
 
 .car-nav img{
-    width: 50%;
-    max-width: 100%;
+    width: 30%;
+    max-width: 70%;
     margin-left: 2vw;
 }
 
@@ -19,13 +23,16 @@ ul#horizontal-list li, ul#horizontal-list a{
     display: inline;
     text-decoration: none;
     padding: 0.5vw;
+    border-radius: 11px;
+    margin: 0.2vw;
     color: black;
 }
 
 ul#horizontal-list a:nth-last-child(1){
-    border: 2px solid blue;
+    border: 2px solid lightskyblue;
+    background-color: lightskyblue;
     border-radius: 11px;
-    margin-right: 0.2vw;
+    margin: 0.2vw;
 }
 
 /* End of Nav Styles */
@@ -33,12 +40,27 @@ ul#horizontal-list a:nth-last-child(1){
 /* Start of Hero/Header section MAKE THIS INTO A HERO SECTION not sidebyside*/
 #header-text{
     padding: 2vw;
+    justify-content: right;
+    align-content: center;
 }
 
-.hero-image{
-    width: 80%;
-    max-width: 100%;
+#header-text>h2{
+    justify-items: center;
 }
+
+
+.bgimage {
+    width:100%;
+    height:500px;
+    background: url(../static/images/car-lot.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    color:white;
+    text-shadow:1px 1px black;
+    font-size: 9px;
+  }
 
 /* Start of Middle Section Styles */
 #middle-text{
@@ -48,4 +70,23 @@ ul#horizontal-list a:nth-last-child(1){
 
 #middle-text h2{
     padding: 1.5vw;
+}
+
+/* Start of Features Section Styles */
+#api-image,#graphql-image,#database-image{
+    margin-bottom: 10vh;
+}
+
+#features-section{
+    margin: 8vw;
+}
+
+/* Community Section Styles */
+#logo-features{
+    width: 50%;
+    max-width: 60%;
+    height: 60%;
+    max-height: 75%;
+    margin-left: 10vw;
+    margin-bottom: 10vh;
 }
