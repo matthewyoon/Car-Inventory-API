@@ -1,8 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
 
+<!--Flask Flashed Message to User-->
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories = true) %} <!--Create a group of messages (if we have them) place them within messages(variable) and we're able to use this inside of our html(similar to python)-->
+        {% if messages %}
+            {% for cat,msg in messages %}
+                {% if cat == 'user-created' %}
+                    <div class="alert alert-success">
+                        {{ msg }}
+                        <button type="button" class = 'close' data-dismiss = 'alert'>&times;</button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+
+
+<div class="container">
     <!--Start of Header Section-->
 
     <section class="bgimage">
@@ -56,7 +73,7 @@
         <div class="col-12 col-md-6">
             <img src="../../static/images/cars-logo.png" alt="lightning-mcqueen" id="logo-features">
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" id="community-notes">
             <h4>Talk with like minded car business owners</h4>
             <p>
                 Talk with other devs around the world and collaborate on projects with your data.

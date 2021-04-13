@@ -51,7 +51,7 @@ ul#horizontal-list a:nth-last-child(1){
 
 .bgimage {
     width:100%;
-    height:500px;
+    height:700px;
     background: url(../static/images/car-lot.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -79,6 +79,7 @@ ul#horizontal-list a:nth-last-child(1){
 
 #features-section{
     margin: 8vw;
+    text-align: center;
 }
 
 /* Community Section Styles */
@@ -89,4 +90,12 @@ ul#horizontal-list a:nth-last-child(1){
     max-height: 75%;
     margin-left: 10vw;
     margin-bottom: 10vh;
+}
+
+#community-notes{
+    text-align: justify;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    margin-top: 5vh;
 }
